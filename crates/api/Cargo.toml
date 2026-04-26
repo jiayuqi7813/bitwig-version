@@ -1,0 +1,21 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+walkdir = { workspace = true }
+bitwig_core = { path = "../core" }
+git_backend = { path = "../git_backend" }
+dawproject = { path = "../dawproject" }
+diff_engine = { path = "../diff_engine" }
+
+[dev-dependencies]
+tower = { workspace = true }
+tempfile = { workspace = true }
