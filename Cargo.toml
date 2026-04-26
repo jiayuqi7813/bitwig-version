@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/core",
+  "crates/git_backend",
+  "crates/dawproject",
+  "crates/diff_engine",
+  "crates/api",
+  "apps/desktop/src-tauri"
+]
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+anyhow = "1"
+blake3 = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+tokio = { version = "1", features = ["full"] }
+axum = "0.7"
+zip = "2"
+roxmltree = "0.20"
+tempfile = "3"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["v4"] }
+rand = "0.8"
+walkdir = "2"
+tower = "0.5"
